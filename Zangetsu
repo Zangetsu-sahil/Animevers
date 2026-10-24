@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeVerse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <h2>Anime<span>Verse</span></h2>
+      <a href="#anime-list">Explore</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">YOUR ANIME UNIVERSE</p>
+      <h1>Find Your Next<br><span>Favorite Anime.</span></h1>
+      <p>Explore amazing stories, characters and worlds.</p>
+
+      <input
+        id="search"
+        type="search"
+        placeholder="Search anime..."
+        aria-label="Search anime"
+      >
+    </div>
+  </header>
+
+  <main id="anime-list">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">YOUR NEXT OBSESSION</p>
+        <h2>Explore Anime</h2>
+      </div>
+      <select id="genre" aria-label="Filter by genre">
+        <option value="all">All genres</option>
+        <option value="Action">Action</option>
+        <option value="Adventure">Adventure</option>
+        <option value="Fantasy">Fantasy</option>
+        <option value="Sports">Sports</option>
+      </select>
+    </div>
+
+    <div id="anime-grid" class="anime-grid"></div>
+    <p id="empty-message" hidden>No anime found. Try another search!</p>
+  </main>
+
+  <footer>Made with ♥ by an anime fan.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
